@@ -25,10 +25,10 @@ class Dog
     DB[:conn].execute(sql)
   end
 
-  def self.create(name, grade)
-   student = Student.new(name, grade)
-   student.save
-   student
+  def self.create(name, breed)
+   dog = Dogs.new(name, breed)
+   dog.save
+   dog
  end
 
   def self.new_from_db(row)
